@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NDIS Referral Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
+    input, textarea, select { width: 100%; padding: 10px; margin-bottom: 15px; }
+    label { font-weight: bold; display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>NDIS Referral Form</h1>
+  <form action="https://formsubmit.co/enquiries@uswa.net.au" method="POST">
+
+    <label>Given Names*</label>
+    <input type="text" name="given_names" required>
+
+    <label>Last Name*</label>
+    <input type="text" name="last_name" required>
+
+    <label>Date of Birth*</label>
+    <input type="date" name="dob" required>
+
+    <label>NDIS Number</label>
+    <input type="text" name="ndis_number">
+
+    <label>NDIS Plan Start Date</label>
+    <input type="date" name="plan_start">
+
+    <label>NDIS Plan End Date</label>
+    <input type="date" name="plan_end">
+
+    <label>Gender*</label>
+    <input type="text" name="gender" required>
+
+    <label>Address*</label>
+    <input type="text" name="address" required>
+
+    <label>Postcode*</label>
+    <input type="text" name="postcode" required>
+
+    <label>Email Address</label>
+    <input type="email" name="email">
+
+    <label>Phone Number*</label>
+    <input type="tel" name="phone" required>
+
+    <label>Are you?</label>
+    <input type="checkbox" name="funding_type" value="NDIA Managed"> NDIA Managed
+    <input type="checkbox" name="funding_type" value="Plan Managed"> Plan Managed
+    <input type="checkbox" name="funding_type" value="Self-Managed"> Self-Managed
+
+    <label>Plan Manager (Please provide their email address)</label>
+    <input type="email" name="plan_manager_email">
+
+    <label>What type of service and support are you seeking?</label>
+    <textarea name="services_requested" rows="4"></textarea>
+
+    <label>Preferred method of contact</label>
+    <input type="checkbox" name="preferred_contact" value="Email"> Email
+    <input type="checkbox" name="preferred_contact" value="Phone Call"> Phone Call
+    <input type="text" name="preferred_contact_other" placeholder="Other (specify)">
+
+    <hr>
+
+    <h3>Referral Information</h3>
+
+    <label>Full Name</label>
+    <input type="text" name="referrer_name">
+
+    <label>Name of Organisation (if applicable)</label>
+    <input type="text" name="organisation">
+
+    <label>Relationship to Client</label>
+    <input type="text" name="relationship">
+
+    <label>When would you like service to commence?</label>
+    <input type="text" name="start_date_request">
+
+    <label>Phone Number</label>
+    <input type="tel" name="referrer_phone">
+
+    <label>Email Address</label>
+    <input type="email" name="referrer_email">
+
+    <label>How did you hear about us?</label>
+    <input type="checkbox" name="discovery" value="Google"> Google
+    <input type="checkbox" name="discovery" value="Website"> Website
+    <input type="checkbox" name="discovery" value="Facebook"> Facebook
+    <input type="checkbox" name="discovery" value="Instagram"> Instagram
+    <input type="checkbox" name="discovery" value="Friend"> A Friend
+    <input type="checkbox" name="discovery" value="Flyer"> Flyer
+    <input type="text" name="discovery_other" placeholder="Other (specify)">
+
+    <!-- Hidden fields to configure formsubmit behavior -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_autoresponse" value="Thank you for your referral. We will be in touch shortly.">
+    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+    <button type="submit">Submit Referral</button>
+  </form>
+</body>
+</html>
