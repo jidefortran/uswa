@@ -4,103 +4,106 @@
 <head>
   <meta charset="UTF-8">
   <title>NDIS Referral Form</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
-    input, textarea, select { width: 100%; padding: 10px; margin-bottom: 15px; }
-    label { font-weight: bold; display: block; margin-top: 10px; }
-  </style>
 </head>
-<body>
-  <h1>NDIS Referral Form</h1>
+<body style="background-color: #f4f8fb; font-family: 'Segoe UI', sans-serif; padding: 40px; color: #333;">
+
+  <div style="max-width: 800px; margin: auto; background: #fff; padding: 40px; border-radius: 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    <h1 style="text-align: center; color: #2b6777;">NDIS Referral Form</h1>
+
   <form action="https://formsubmit.co/enquiries@uswa.net.au" method="POST">
 
-    <label>Given Names*</label>
-    <input type="text" name="given_names" required>
+      <!-- Form Field Template -->
+      <label style="font-weight: bold;">Given Names*</label>
+      <input type="text" name="given_names" required style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>Last Name*</label>
-    <input type="text" name="last_name" required>
+      <label style="font-weight: bold;">Last Name*</label>
+      <input type="text" name="last_name" required style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>Date of Birth*</label>
-    <input type="date" name="dob" required>
+      <label style="font-weight: bold;">Date of Birth*</label>
+      <input type="date" name="dob" required style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>NDIS Number</label>
-    <input type="text" name="ndis_number">
+      <label style="font-weight: bold;">NDIS Number</label>
+      <input type="text" name="ndis_number" style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>NDIS Plan Start Date</label>
-    <input type="date" name="plan_start">
+      <label style="font-weight: bold;">NDIS Plan Start Date</label>
+      <input type="date" name="plan_start" style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>NDIS Plan End Date</label>
-    <input type="date" name="plan_end">
+      <label style="font-weight: bold;">NDIS Plan End Date</label>
+      <input type="date" name="plan_end" style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>Gender*</label>
-    <input type="text" name="gender" required>
+      <label style="font-weight: bold;">Gender*</label>
+      <input type="text" name="gender" required style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>Address*</label>
-    <input type="text" name="address" required>
+      <label style="font-weight: bold;">Address*</label>
+      <input type="text" name="address" required style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>Postcode*</label>
-    <input type="text" name="postcode" required>
+      <label style="font-weight: bold;">Postcode*</label>
+      <input type="text" name="postcode" required style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>Email Address</label>
-    <input type="email" name="email">
+      <label style="font-weight: bold;">Email Address</label>
+      <input type="email" name="email" style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>Phone Number*</label>
-    <input type="tel" name="phone" required>
+      <label style="font-weight: bold;">Phone Number*</label>
+      <input type="tel" name="phone" required style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>Are you?</label>
-    <input type="checkbox" name="funding_type" value="NDIA Managed"> NDIA Managed
-    <input type="checkbox" name="funding_type" value="Plan Managed"> Plan Managed
-    <input type="checkbox" name="funding_type" value="Self-Managed"> Self-Managed
+      <label style="font-weight: bold;">Are you?</label><br>
+      <label><input type="checkbox" name="funding_type" value="NDIA Managed"> NDIA Managed</label><br>
+      <label><input type="checkbox" name="funding_type" value="Plan Managed"> Plan Managed</label><br>
+      <label><input type="checkbox" name="funding_type" value="Self-Managed"> Self-Managed</label><br><br>
 
-    <label>Plan Manager (Please provide their email address)</label>
-    <input type="email" name="plan_manager_email">
+      <label style="font-weight: bold;">Plan Manager Email</label>
+      <input type="email" name="plan_manager_email" style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>What type of service and support are you seeking?</label>
-    <textarea name="services_requested" rows="4"></textarea>
+      <label style="font-weight: bold;">What type of service and support are you seeking?</label>
+      <textarea name="services_requested" rows="3" style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;"></textarea>
 
-    <label>Preferred method of contact</label>
-    <input type="checkbox" name="preferred_contact" value="Email"> Email
-    <input type="checkbox" name="preferred_contact" value="Phone Call"> Phone Call
-    <input type="text" name="preferred_contact_other" placeholder="Other (specify)">
+      <label style="font-weight: bold;">Preferred method of contact</label><br>
+      <label><input type="checkbox" name="preferred_contact" value="Email"> Email</label><br>
+      <label><input type="checkbox" name="preferred_contact" value="Phone Call"> Phone Call</label><br>
+      <input type="text" name="preferred_contact_other" placeholder="Other (specify)" style="width: 100%; padding: 10px 15px; margin-bottom: 20px; border-radius: 50%; border: 1px solid #ccc;"><br>
 
-    <hr>
+      <hr style="margin: 40px 0;">
 
-    <h3>Referral Information</h3>
+      <h3 style="color: #2b6777;">Referral Information</h3>
 
-    <label>Full Name</label>
-    <input type="text" name="referrer_name">
+      <label style="font-weight: bold;">Full Name</label>
+      <input type="text" name="referrer_name" style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>Name of Organisation (if applicable)</label>
-    <input type="text" name="organisation">
+      <label style="font-weight: bold;">Organisation</label>
+      <input type="text" name="organisation" style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>Relationship to Client</label>
-    <input type="text" name="relationship">
+      <label style="font-weight: bold;">Relationship to Client</label>
+      <input type="text" name="relationship" style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>When would you like service to commence?</label>
-    <input type="text" name="start_date_request">
+      <label style="font-weight: bold;">Start Date Requested</label>
+      <input type="text" name="start_date_request" style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>Phone Number</label>
-    <input type="tel" name="referrer_phone">
+      <label style="font-weight: bold;">Phone Number</label>
+      <input type="tel" name="referrer_phone" style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>Email Address</label>
-    <input type="email" name="referrer_email">
+      <label style="font-weight: bold;">Email Address</label>
+      <input type="email" name="referrer_email" style="width: 100%; padding: 10px 15px; margin-bottom: 15px; border-radius: 50%; border: 1px solid #ccc;">
 
-    <label>How did you hear about us?</label>
-    <input type="checkbox" name="discovery" value="Google"> Google
-    <input type="checkbox" name="discovery" value="Website"> Website
-    <input type="checkbox" name="discovery" value="Facebook"> Facebook
-    <input type="checkbox" name="discovery" value="Instagram"> Instagram
-    <input type="checkbox" name="discovery" value="Friend"> A Friend
-    <input type="checkbox" name="discovery" value="Flyer"> Flyer
-    <input type="text" name="discovery_other" placeholder="Other (specify)">
+      <label style="font-weight: bold;">How did you hear about us?</label><br>
+      <label><input type="checkbox" name="discovery" value="Google"> Google</label><br>
+      <label><input type="checkbox" name="discovery" value="Website"> Website</label><br>
+      <label><input type="checkbox" name="discovery" value="Facebook"> Facebook</label><br>
+      <label><input type="checkbox" name="discovery" value="Instagram"> Instagram</label><br>
+      <label><input type="checkbox" name="discovery" value="Friend"> A Friend</label><br>
+      <label><input type="checkbox" name="discovery" value="Flyer"> Flyer</label><br>
+      <input type="text" name="discovery_other" placeholder="Other (specify)" style="width: 100%; padding: 10px 15px; margin-top: 10px; border-radius: 50%; border: 1px solid #ccc;"><br><br>
 
-    <!-- Hidden fields to configure formsubmit behavior -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_autoresponse" value="Thank you for your referral. We will be in touch shortly.">
-    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+      <!-- Hidden Fields -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_autoresponse" value="Thank you for your referral. We will be in touch shortly.">
+      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
 
-    <button type="submit">Submit Referral</button>
-  </form>
+      <div style="text-align: center;">
+        <button type="submit" style="background-color: #52ab98; color: white; padding: 14px 30px; border: none; border-radius: 50%; font-size: 16px; cursor: pointer;">Submit</button>
+      </div>
+    </form>
+  </div>
+
 </body>
 </html>
