@@ -1,5 +1,7 @@
 
-   <!DOCTYPE html>
+
+
+         <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -34,7 +36,7 @@
     }
     fieldset {
       border: 1px solid #ccc;
-      border-radius: 15px;
+      border-radius: 50px;
       margin-bottom: 30px;
       padding: 20px 30px;
     }
@@ -55,10 +57,11 @@
     .form-group textarea,
     .form-group select {
       width: 100%;
-      padding: 10px 15px;
+      padding: 12px 20px;
       border: 1px solid #ccc;
-      border-radius: 15%;
+      border-radius: 50px;
       box-sizing: border-box;
+      font-size: 14px;
     }
     .checkbox-group label {
       margin-right: 20px;
@@ -66,15 +69,19 @@
     }
     .button-wrapper {
       text-align: center;
+      margin-top: 20px;
     }
     .button-wrapper button {
       background-color: #52ab98;
       color: #fff;
-      padding: 14px 30px;
+      padding: 14px 40px;
       border: none;
-      border-radius: 15%;
+      border-radius: 50px;
       font-size: 16px;
       cursor: pointer;
+    }
+    .button-wrapper button:hover {
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -86,7 +93,6 @@
     </div>
 
    <form action="https://formsubmit.co/enquiries@uswa.net.au" method="POST">
-
       <!-- Personal Details -->
       <fieldset>
         <legend>1. Personal Details</legend>
