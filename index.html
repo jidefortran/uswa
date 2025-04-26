@@ -1,238 +1,281 @@
-
-
-
-         <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Utmost Solutions WA Referal Form</title>
-  <style>
-    body {
-      background-color: #f4f8fb;
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-      padding: 40px;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 24px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .header img {
-      width: 120px;
-      height: auto;
-    }
-    .header h1 {
-      margin-top: 10px;
-      color: #2b6777;
-      font-size: 28px;
-    }
-    fieldset {
-      border: 1px solid #ccc;
-      border-radius: 50px;
-      margin-bottom: 30px;
-      padding: 20px 30px;
-    }
-    legend {
-      padding: 0 10px;
-      font-weight: bold;
-      color: #2b6777;
-    }
-    .form-group {
-      margin-bottom: 15px;
-    }
-    .form-group label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: bold;
-    }
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-      width: 100%;
-      padding: 12px 20px;
-      border: 1px solid #ccc;
-      border-radius: 50px;
-      box-sizing: border-box;
-      font-size: 14px;
-    }
-    .checkbox-group label {
-      margin-right: 20px;
-      font-weight: normal;
-    }
-    .button-wrapper {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .button-wrapper button {
-      background-color: #52ab98;
-      color: #fff;
-      padding: 14px 40px;
-      border: none;
-      border-radius: 50px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    .button-wrapper button:hover {
-      opacity: 0.9;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utmost Solutions WA Referral Form</title>
+    <style>
+        body {
+            background-color: #f4f8fb;
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
+            padding: 20px; /* Adjust padding for smaller screens */
+        }
+        .container {
+            max-width: 100%; /* Make container full width on smaller screens */
+            margin: auto;
+            background: #fff;
+            padding: 20px; /* Adjust padding for smaller screens */
+            border-radius: 12px; /* Slightly reduce border-radius for smaller screens */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Slightly reduce shadow */
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px; /* Adjust margin */
+        }
+        .header img {
+            width: 80px; /* Reduce logo size */
+            height: auto;
+        }
+        .header h1 {
+            margin-top: 8px;
+            color: #2b6777;
+            font-size: 20px; /* Reduce heading size */
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 25px; /* Adjust border-radius */
+            margin-bottom: 20px; /* Adjust margin */
+            padding: 15px; /* Adjust padding */
+        }
+        legend {
+            padding: 0 8px;
+            font-weight: bold;
+            color: #2b6777;
+            font-size: 14px; /* Adjust legend size */
+        }
+        .form-group {
+            margin-bottom: 12px; /* Adjust margin */
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: bold;
+            font-size: 14px; /* Adjust label size */
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: calc(100% - 24px); /* Adjust width for padding */
+            padding: 10px 12px; /* Adjust padding */
+            border: 1px solid #ccc;
+            border-radius: 25px; /* Adjust border-radius */
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        .checkbox-group label {
+            margin-right: 15px;
+            font-weight: normal;
+            font-size: 14px; /* Adjust checkbox label size */
+        }
+        .button-wrapper {
+            text-align: center;
+            margin-top: 15px; /* Adjust margin */
+        }
+        .button-wrapper button {
+            background-color: #52ab98;
+            color: #fff;
+            padding: 12px 30px; /* Adjust padding */
+            border: none;
+            border-radius: 25px; /* Adjust border-radius */
+            font-size: 16px;
+            cursor: pointer;
+            width: 80%; /* Make button wider on smaller screens */
+        }
+        .button-wrapper button:hover {
+            opacity: 0.9;
+        }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                border-radius: 8px;
+            }
+            .header img {
+                width: 60px;
+            }
+            .header h1 {
+                font-size: 18px;
+            }
+            fieldset {
+                border-radius: 15px;
+                padding: 10px;
+                margin-bottom: 15px;
+            }
+            legend {
+                font-size: 12px;
+            }
+            .form-group label {
+                font-size: 12px;
+            }
+            .form-group input,
+            .form-group textarea,
+            .form-group select {
+                font-size: 12px;
+                padding: 8px 10px;
+                border-radius: 15px;
+            }
+            .checkbox-group label {
+                font-size: 12px;
+                margin-right: 10px;
+                display: block; /* Stack checkboxes on smaller screens */
+                margin-bottom: 5px;
+            }
+            .button-wrapper button {
+                font-size: 14px;
+                padding: 10px 25px;
+                border-radius: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="https://www.uswa.net.au/wp-content/uploads/2024/10/Logo-1920w-1.png" alt="Logo">
-      <h1>Utmost Solutions WA Referal Form</h1>
+    <div class="container">
+        <div class="header">
+            <img src="https://www.uswa.net.au/wp-content/uploads/2024/10/Logo-1920w-1.png" alt="Logo">
+            <h1>Utmost Solutions WA Referral Form</h1>
+        </div>
+
+       <form action="https://formsubmit.co/enquiries@uswa.net.au" method="POST">
+            <fieldset>
+                <legend>1. Personal Details</legend>
+                <div class="form-group">
+                    <label for="given_names">Given Names*</label>
+                    <input id="given_names" name="given_names" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name*</label>
+                    <input id="last_name" name="last_name" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth*</label>
+                    <input id="dob" name="dob" type="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender*</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select...</option>
+                        <option>Female</option>
+                        <option>Male</option>
+                        <option>Non‑binary</option>
+                        <option>Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address*</label>
+                    <input id="address" name="address" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="postcode">Postcode*</label>
+                    <input id="postcode" name="postcode" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input id="phone" name="phone" type="tel" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. NDIS Plan Details</legend>
+                <div class="form-group">
+                    <label for="ndis_number">NDIS Number</label>
+                    <input id="ndis_number" name="ndis_number" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="plan_start">Plan Start Date</label>
+                    <input id="plan_start" name="plan_start" type="date">
+                </div>
+                <div class="form-group">
+                    <label for="plan_end">Plan End Date</label>
+                    <input id="plan_end" name="plan_end" type="date">
+                </div>
+                <div class="form-group">
+                    <label>Funding Type</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="funding_type" value="NDIA Managed"> NDIA Managed</label>
+                        <label><input type="checkbox" name="funding_type" value="Plan Managed"> Plan Managed</label>
+                        <label><input type="checkbox" name="funding_type" value="Self-Managed"> Self-Managed</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="plan_manager_email">Plan Manager Email</label>
+                    <input id="plan_manager_email" name="plan_manager_email" type="email">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Support Requested</legend>
+                <div class="form-group">
+                    <label for="services_requested">Type of Service & Support</label>
+                    <textarea id="services_requested" name="services_requested" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Contact Method</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="preferred_contact" value="Email"> Email</label>
+                        <label><input type="checkbox" name="preferred_contact" value="Phone Call"> Phone Call</label>
+                    </div>
+                    <input name="preferred_contact_other" type="text" placeholder="Other (specify)">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Referral Information</legend>
+                <div class="form-group">
+                    <label for="referrer_name">Referrer Full Name</label>
+                    <input id="referrer_name" name="referrer_name" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="organisation">Organisation (if applicable)</label>
+                    <input id="organisation" name="organisation" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="relationship">Relationship to Client</label>
+                    <input id="relationship" name="relationship" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="start_date_request">Service Start Date Requested</label>
+                    <input id="start_date_request" name="start_date_request" type="date">
+                </div>
+                <div class="form-group">
+                    <label for="referrer_phone">Referrer Phone</label>
+                    <input id="referrer_phone" name="referrer_phone" type="tel">
+                </div>
+                <div class="form-group">
+                    <label for="referrer_email">Referrer Email</label>
+                    <input id="referrer_email" name="referrer_email" type="email">
+                </div>
+                <div class="form-group">
+                    <label>How Did You Hear About Us?</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="discovery" value="Google"> Google</label>
+                        <label><input type="checkbox" name="discovery" value="Website"> Website</label>
+                        <label><input type="checkbox" name="discovery" value="Facebook"> Facebook</label>
+                        <label><input type="checkbox" name="discovery" value="Instagram"> Instagram</label>
+                        <label><input type="checkbox" name="discovery" value="Friend"> A Friend</label>
+                        <label><input type="checkbox" name="discovery" value="Flyer"> Flyer</label>
+                    </div>
+                    <input name="discovery_other" type="text" placeholder="Other (specify)">
+                </div>
+            </fieldset>
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_autoresponse" value="Thank you for your referral. We will be in touch shortly.">
+            <input type="hidden" name="_next" value="https://www.uswa.net.au">
+
+            <div class="button-wrapper">
+                <button type="submit">Submit Referral</button>
+            </div>
+        </form>
     </div>
-
-   <form action="https://formsubmit.co/enquiries@uswa.net.au" method="POST">
-      <!-- Personal Details -->
-      <fieldset>
-        <legend>1. Personal Details</legend>
-        <div class="form-group">
-          <label for="given_names">Given Names*</label>
-          <input id="given_names" name="given_names" type="text" required>
-        </div>
-        <div class="form-group">
-          <label for="last_name">Last Name*</label>
-          <input id="last_name" name="last_name" type="text" required>
-        </div>
-        <div class="form-group">
-          <label for="dob">Date of Birth*</label>
-          <input id="dob" name="dob" type="date" required>
-        </div>
-        <div class="form-group">
-          <label for="gender">Gender*</label>
-          <select id="gender" name="gender" required>
-            <option value="" disabled selected>Select...</option>
-            <option>Female</option>
-            <option>Male</option>
-            <option>Non‑binary</option>
-            <option>Prefer not to say</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="address">Address*</label>
-          <input id="address" name="address" type="text" required>
-        </div>
-        <div class="form-group">
-          <label for="postcode">Postcode*</label>
-          <input id="postcode" name="postcode" type="text" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone Number*</label>
-          <input id="phone" name="phone" type="tel" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input id="email" name="email" type="email">
-        </div>
-      </fieldset>
-
-      <!-- NDIS Plan Details -->
-      <fieldset>
-        <legend>2. NDIS Plan Details</legend>
-        <div class="form-group">
-          <label for="ndis_number">NDIS Number</label>
-          <input id="ndis_number" name="ndis_number" type="text">
-        </div>
-        <div class="form-group">
-          <label for="plan_start">Plan Start Date</label>
-          <input id="plan_start" name="plan_start" type="date">
-        </div>
-        <div class="form-group">
-          <label for="plan_end">Plan End Date</label>
-          <input id="plan_end" name="plan_end" type="date">
-        </div>
-        <div class="form-group">
-          <label>Funding Type</label>
-          <div class="checkbox-group">
-            <label><input type="checkbox" name="funding_type" value="NDIA Managed"> NDIA Managed</label>
-            <label><input type="checkbox" name="funding_type" value="Plan Managed"> Plan Managed</label>
-            <label><input type="checkbox" name="funding_type" value="Self-Managed"> Self-Managed</label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="plan_manager_email">Plan Manager Email</label>
-          <input id="plan_manager_email" name="plan_manager_email" type="email">
-        </div>
-      </fieldset>
-
-      <!-- Support Requested -->
-      <fieldset>
-        <legend>3. Support Requested</legend>
-        <div class="form-group">
-          <label for="services_requested">Type of Service & Support</label>
-          <textarea id="services_requested" name="services_requested" rows="4"></textarea>
-        </div>
-        <div class="form-group">
-          <label>Preferred Contact Method</label>
-          <div class="checkbox-group">
-            <label><input type="checkbox" name="preferred_contact" value="Email"> Email</label>
-            <label><input type="checkbox" name="preferred_contact" value="Phone Call"> Phone Call</label>
-          </div>
-          <input name="preferred_contact_other" type="text" placeholder="Other (specify)">
-        </div>
-      </fieldset>
-
-      <!-- Referral Information -->
-      <fieldset>
-        <legend>4. Referral Information</legend>
-        <div class="form-group">
-          <label for="referrer_name">Referrer Full Name</label>
-          <input id="referrer_name" name="referrer_name" type="text">
-        </div>
-        <div class="form-group">
-          <label for="organisation">Organisation (if applicable)</label>
-          <input id="organisation" name="organisation" type="text">
-        </div>
-        <div class="form-group">
-          <label for="relationship">Relationship to Client</label>
-          <input id="relationship" name="relationship" type="text">
-        </div>
-        <div class="form-group">
-          <label for="start_date_request">Service Start Date Requested</label>
-          <input id="start_date_request" name="start_date_request" type="date">
-        </div>
-        <div class="form-group">
-          <label for="referrer_phone">Referrer Phone</label>
-          <input id="referrer_phone" name="referrer_phone" type="tel">
-        </div>
-        <div class="form-group">
-          <label for="referrer_email">Referrer Email</label>
-          <input id="referrer_email" name="referrer_email" type="email">
-        </div>
-        <div class="form-group">
-          <label>How Did You Hear About Us?</label>
-          <div class="checkbox-group">
-            <label><input type="checkbox" name="discovery" value="Google"> Google</label>
-            <label><input type="checkbox" name="discovery" value="Website"> Website</label>
-            <label><input type="checkbox" name="discovery" value="Facebook"> Facebook</label>
-            <label><input type="checkbox" name="discovery" value="Instagram"> Instagram</label>
-            <label><input type="checkbox" name="discovery" value="Friend"> A Friend</label>
-            <label><input type="checkbox" name="discovery" value="Flyer"> Flyer</label>
-          </div>
-          <input name="discovery_other" type="text" placeholder="Other (specify)">
-        </div>
-      </fieldset>
-
-      <!-- FormSubmit settings -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="Thank you for your referral. We will be in touch shortly.">
-      <input type="hidden" name="_next" value="https://www.uswa.net.au">
-
-      <div class="button-wrapper">
-        <button type="submit">Submit Referral</button>
-      </div>
-    </form>
-  </div>
 </body>
 </html>
